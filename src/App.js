@@ -1,22 +1,23 @@
+import "./App.css";
+import BarChart from "./components/bar-chart/Barchats";
+import LineChart from "./components/line-chart/Linecharts";
 
-import './App.css';
-import BarChart from './components/bar-chart/Barchats';
-import LineChart from './components/line-chart/Linecharts';
-
-function App() {
+const App = () => {
   return (
     <>
-      <main>
-      
+      <main className="App">
+      <h1>Data Visualization</h1>
         <section>
-        <BarChart/>
+        <h2>Line chart</h2>
+          <LineChart />
         </section>
         <section>
-        <LineChart/>
+        <h2>Bar Chart</h2>
+          <BarChart />
         </section>
       </main>
     </>
   );
-}
+};
 
 export default App;
